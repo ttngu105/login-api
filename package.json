@@ -1,0 +1,16 @@
+{
+	"name": "login-api",
+	"version": "1.0.0",
+	"description": "Backend API for Number Guessing Game",
+	"author": "Thien Tommy Nguyen",
+	"main": "apps.js",
+	"scripts": {
+		"start": "npm install && node app"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"shortid": "^2.2.15",
+		"mongoose": "^5.9.9",
+		"cors": "^2.8.5"
+	}
+}
