@@ -13,18 +13,14 @@ User.find({logedin:true},(error,users)=>{
 			router.get('/login',(request,response)=>{
 			response.json({'success':true,
 			'user': user.username})
-			user.logedin = false
-			console.log(user.logedin)
-			user.save()
-			setTimeout(process.exit(0),5000)
 			})
 		}
 		else{
 			router.get('/login',(request,response)=>{
-			response.json({'success':true,
-			'user': "user does not exist"})})
+			response.json({'success':true,'user': "user does not exist"})})
 	}
-		
+	user.logedin = false
+	user.save()
 	})
 }
 isUser()
